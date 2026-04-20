@@ -159,25 +159,27 @@
             <!--
             ----BARRA MENÚ LATERAL
             -->
-            <div class="col-2 sidebar-custom p-4">
-                <div class="border-bottom mb-4 pb-3">
+            <div class="col-2 sidebar-custom p-0">
+                <div class="border-bottom border-light border-opacity-10 mb-4 p-4">
                     <h4 class="text-white">Zengotitabengoa</h4>
                     <h4 class="text-white">Pans</h4>
                     <h6 class="fw-light text-primary-custom">DASHBOARD</h6>
                 </div>
                 <!-- Primer grupo de enlaces -->
-                <ul class="ps-0 list-unstyled">
-                    <li><a href="#" class="nav-link mb-3 p-3 active"><i class="bi bi-joystick p-2"></i>Dashboard</a></li>
-                    <li><a href="#" class="nav-link mb-3 p-3"><i class="bi bi-box p-2"></i>Productos</a></li>
-                    <li><a href="#" class="nav-link mb-3 p-3"><i class="bi bi-cart p-2"></i>Pedidos</a></li>
-                    <li><a href="#" class="nav-link mb-3 p-3"><i class="bi bi-people p-2"></i>Clientes</a></li>
-                    <li><a href="#" class="nav-link mb-3 p-3"><i class="bi bi-graph-up p-2"></i>Estadísticas</a></li>
-                    <li><a href="#" class="nav-link mb-3 p-3"><i class="bi bi-tags p-2"></i>Categorías</a></li>
-                </ul>
+                <div class="border-bottom border-light border-opacity-10 mb-4">
+                    <ul class="ps-0 list-unstyled">
+                        <li><a href="#" class="nav-link px-4 py-3 active"><i class="bi bi-joystick p-2"></i>Dashboard</a></li>
+                        <li><a href="#" class="nav-link px-4 py-3"><i class="bi bi-box p-2"></i>Productos</a></li>
+                        <li><a href="#" class="nav-link px-4 py-3"><i class="bi bi-cart p-2"></i>Pedidos</a></li>
+                        <li><a href="#" class="nav-link px-4 py-3"><i class="bi bi-people p-2"></i>Clientes</a></li>
+                        <li><a href="#" class="nav-link px-4 py-3"><i class="bi bi-graph-up p-2"></i>Estadísticas</a></li>
+                        <li><a href="#" class="nav-link px-4 py-3"><i class="bi bi-tags p-2"></i>Categorías</a></li>
+                    </ul>
+                </div>
                 <!-- Segundo grupo de enlaces -->
                 <ul class="ps-0 list-unstyled">
-                    <li><a href="#" class="nav-link mb-3 p-3"><i class="bi bi-house p-2"></i>Ir a la tienda</a></li>
-                    <li><a href="#" class="nav-link mb-3 p-3"><i class="bi bi-gear p-2"></i>Configuración</a></li>
+                    <li><a href="#" class="nav-link px-4 py-3"><i class="bi bi-house p-2"></i>Ir a la tienda</a></li>
+                    <li><a href="#" class="nav-link px-4 py-3"><i class="bi bi-gear p-2"></i>Configuración</a></li>
                 </ul>
             </div>
             
@@ -194,10 +196,12 @@
                         <h2>Dashboard</h2>
                         <p>Bienvenido al panel de control de Zengotitabengoa Pans</p>
                     </div>
-                    <div class="col-4 d-flex justify-content-end align-items-center gap-1">
-                        <button class="btn btn-outline-primary-custom p-1 fw-light"><i class="bi bi-calendar-week"></i> Esta semana</button> <!--Uso de icono-->
-                        <button class="btn btn-outline-primary-custom p-1 fw-light">Exportar</button> 
-                        <button class="btn btn-primary-custom p-1 fw-light">+ Nuevo producto</button> 
+                    <div class="col-4 d-flex justify-content-end align-items-center gap-3">
+                        <div class="btn-group">
+                            <button class="btn btn-sm btn-outline-primary-custom fw-light"><i class="bi bi-calendar-week"></i> Esta semana</button> <!--Uso de icono-->
+                            <button class="btn btn-sm btn-outline-primary-custom fw-light">Exportar</button>
+                        </div>
+                        <button class="btn btn-sm btn-primary-custom fw-light">+ Nuevo producto</button> 
                     </div>
                 </div>
                 <!--
@@ -241,10 +245,20 @@
                 <div class="row mb-4">
                     <!--resumen semanal-->
                     <div class="col-8">
-                        <div class="bg-white rounded border shadow-sm p-3">
-                            <div class="row border-bottom mb-3">
-                                <h5>Resumen semanal de ventas</h5>
+                        <div class="bg-white rounded border shadow-sm px-3 pb-3 pt-2">
+                            <div class="row border-bottom mb-3 align-items-center mx-0 pb-2">
+                                <div class="col-8 px-0">
+                                    <h5 class="mb-0">Resumen semanal de ventas</h5>
+                                </div>
+                                <div class="col-4 px-0 d-flex justify-content-end">
+                                    <div class="btn-group">
+                                        <button class="btn btn-sm btn-outline-primary-custom fw-light">Semana</button>
+                                        <button class="btn btn-sm btn-outline-primary-custom fw-light">Mes</button>
+                                        <button class="btn btn-sm btn-outline-primary-custom fw-light">Año</button>
+                                    </div>
+                                </div>    
                             </div>
+                            
                             <!-- Fila de progreso -->
                             <div class="d-flex justify-content-between mb-1">
                                 <span>Lunes</span>
@@ -306,7 +320,7 @@
                     <!--ventas por categoría-->
                     <div class="col-4">
                         <!--resumen ventas por categoría-->
-                        <div class="bg-white rounded border shadow-sm p-3">
+                        <div class="bg-white rounded border shadow-sm p-3" style="height: 100%;">
                                 <div class="row border-bottom mb-3">
                                     <h5>Ventas por categoría</h5>
                                 </div>
@@ -353,10 +367,16 @@
                 <div class="row mb-4">
                     <!--pedidos recientes-->
                     <div class="col-8">
-                        <div class="bg-white rounded border shadow-sm p-3">
-                            <div class="row border-bottom mb-3">
-                                <h5>Resumen semanal de ventas</h5>
-                            </div>
+                        <div class="bg-white rounded border shadow-sm px-3 pb-3 pt-2">
+                            <div class="row border-bottom mb-3 align-items-center mx-0 pb-2">
+                                <div class="col-8 px-0">
+                                    <h5>Resumen semanal de ventas</h5>
+                                </div>
+                            <div class="col-4 px-0 d-flex justify-content-end"> 
+                                <button class="btn btn-sm btn-outline-primary-custom fw-light">Ver todos</button>
+                        </div>
+                    </div>
+                            
                         <table class="table w-100 p-0">
                             <thead class="table-dark-custom bg-primary-custom text-white">
                                 <tr>
@@ -529,7 +549,7 @@
                                     <i class="bi bi-person-up icon-box-custom p-2 rounded d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;"></i>
                                     <div>
                                         <div>Nuevo cliente registrado</div>
-                                        <div class="text-secondary fw-light">Pedro Sanchez - pdsanchez@gmail.com</div>
+                                        <div class="text-secondary fw-light">Paco Sanchez - pdsanchez@gmail.com</div>
                                         <div class="text-secondary fw-light small">Hace 7 min</div>
                                     </div>
                                 </div>
