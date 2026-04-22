@@ -241,31 +241,35 @@
  
     <!-- CONTENIDO PRINCIPAL -->
     <div class="col-12 col-md-10 p-4">
- 
-      <!-- TÍTULO Y BOTONES DE ACCIÓN -->
-      <div class="row border-bottom mb-4 align-items-center">
-        <div class="col-12 col-md-6 d-flex align-items-center gap-3">
-          <!-- Botón hamburguesa: solo visible en móvil -->
-          <button class="btn btn-primary d-md-none"
-                  type="button"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#sidebarMenu"
-                  aria-controls="sidebarMenu">
-            <i class="bi bi-list"></i>
-          </button>
-          <div>
-            <h2 class="mb-0">Dashboard</h2>
-            <p class="mb-2">Bienvenido al panel de control de Zengotitabengoa Pans</p>
-          </div>
+
+        <!--
+        ----TÍTULO Y
+        ----BOTONES DE ACCIÓN
+        -->
+        <div class="row border-bottom mb-4 align-items-center">
+            <div class="col-12 col-md-6 d-flex align-items-center gap-3">
+            <!-- Botón hamburguesa: solo visible en móvil -->
+                <button class="btn btn-primary d-md-none"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#sidebarMenu"
+                aria-controls="sidebarMenu">
+                <i class="bi bi-list"></i>
+                </button>
+                <div>
+                    <h2 class="mb-0">Dashboard</h2>
+                    <p class="mb-2">Bienvenido al panel de control de Zengotitabengoa Pans</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 d-flex justify-content-start justify-content-md-end align-items-center gap-3 mb-2 mb-md-0">
+                <div class="btn-group">
+                    <button class="btn btn-sm btn-outline-primary-custom fw-light"><i class="bi bi-calendar-week"></i> Esta semana</button>
+                    <button class="btn btn-sm btn-outline-primary-custom fw-light">Exportar</button>
+                </div>
+                <button class="btn btn-sm btn-primary-custom fw-light">+ Nuevo producto</button>
+            </div>
         </div>
-        <div class="col-12 col-md-6 d-flex justify-content-start justify-content-md-end align-items-center gap-3 mb-2 mb-md-0">
-          <div class="btn-group">
-            <button class="btn btn-sm btn-outline-primary fw-light"><i class="bi bi-calendar-week"></i> Esta semana</button>
-            <button class="btn btn-sm btn-outline-primary fw-light">Exportar</button>
-          </div>
-          <button class="btn btn-sm btn-primary fw-light">+ Nuevo producto</button>
-        </div>
-      </div>
  
       <!-- TARJETAS DE ESTADÍSTICAS -->
       <div class="row row-cols-2 row-cols-xl-4 gx-3 mb-4 gy-3">
