@@ -310,53 +310,141 @@
             </div>    
     </div>
  
-      <!-- RESUMEN SEMANAL Y VENTAS POR CATEGORÍA -->
-      <div class="row mb-4">
-        <div class="col-12 mb-4 col-md-8">
-          <div class="bg-white rounded border shadow-sm px-3 pb-3 pt-2">
-            <div class="row border-bottom mb-3 align-items-center mx-0 pb-2">
-              <div class="col-8 px-0"><h5 class="mb-0">Resumen semanal de ventas</h5></div>
-              <div class="col-4 px-0 d-flex justify-content-end">
-                <div class="btn-group">
-                  <button class="btn btn-sm btn-outline-primary fw-light">Semana</button>
-                  <button class="btn btn-sm btn-outline-primary fw-light">Mes</button>
-                  <button class="btn btn-sm btn-outline-primary fw-light">Año</button>
+    <!--
+    ----PROGRESO SEMANAL
+    ----Y VENTAS POR CATEGORÍA
+    -->
+    <div class="row mb-4">
+        <!--resumen semanal-->
+        <div class="col-12 col-lg-8 mb-4 mb-lg-0">
+            <div class="bg-white rounded border shadow-sm px-3 pb-3 pt-2">
+                <div class="row border-bottom mb-3 align-items-center mx-0 pb-2">
+                    <div class="col-8 px-0">
+                        <h5 class="mb-0">Resumen semanal de ventas</h5>
+                    </div>
+                    <div class="col-4 px-0 d-flex justify-content-end">
+                        <div class="btn-group">
+                            <button class="btn btn-sm btn-outline-primary-custom fw-light">Semana</button>
+                            <button class="btn btn-sm btn-outline-primary-custom fw-light">Mes</button>
+                            <button class="btn btn-sm btn-outline-primary-custom fw-light">Año</button>
+                        </div>
+                    </div>    
                 </div>
-              </div>
+                            
+                <!-- Fila de progreso -->
+                <div class="d-flex justify-content-between mb-1">
+                    <span>Lunes</span>
+                    <span>25%</span>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                
+                <!-- Fila de progreso -->
+                <div class="d-flex justify-content-between mb-1">
+                    <span>Martes</span>
+                    <span>50%</span>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                
+                <!-- Fila de progreso -->
+                <div class="d-flex justify-content-between mb-1">
+                    <span>Miércoles</span>
+                    <span>25%</span>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                
+                <!-- Fila de progreso -->
+                <div class="d-flex justify-content-between mb-1">
+                    <span>Jueves</span>
+                    <span>75%</span>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                
+                <!-- Fila de progreso -->
+                <div class="d-flex justify-content-between mb-1">
+                    <span>Viernes</span>
+                    <span>50%</span>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                
+                <!-- Fila de progreso -->
+                <div class="d-flex justify-content-between mb-1">
+                    <span>Sábado</span>
+                    <span>100%</span>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                
+                <!-- Fila de progreso -->
+                <div class="d-flex justify-content-between mb-1">
+                    <span>Domingo</span>
+                    <span>25%</span>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
             </div>
-            <div class="d-flex justify-content-between mb-1"><span>Lunes</span><span>25%</span></div>
-            <div class="progress mb-3"><div class="progress-bar" role="progressbar" style="width:25%"></div></div>
-            <div class="d-flex justify-content-between mb-1"><span>Martes</span><span>50%</span></div>
-            <div class="progress mb-3"><div class="progress-bar" role="progressbar" style="width:50%"></div></div>
-            <div class="d-flex justify-content-between mb-1"><span>Miércoles</span><span>25%</span></div>
-            <div class="progress mb-3"><div class="progress-bar" role="progressbar" style="width:25%"></div></div>
-            <div class="d-flex justify-content-between mb-1"><span>Jueves</span><span>75%</span></div>
-            <div class="progress mb-3"><div class="progress-bar" role="progressbar" style="width:75%"></div></div>
-            <div class="d-flex justify-content-between mb-1"><span>Viernes</span><span>50%</span></div>
-            <div class="progress mb-3"><div class="progress-bar" role="progressbar" style="width:50%"></div></div>
-            <div class="d-flex justify-content-between mb-1"><span>Sábado</span><span>100%</span></div>
-            <div class="progress mb-3"><div class="progress-bar" role="progressbar" style="width:100%"></div></div>
-            <div class="d-flex justify-content-between mb-1"><span>Domingo</span><span>25%</span></div>
-            <div class="progress mb-3"><div class="progress-bar" role="progressbar" style="width:25%"></div></div>
-          </div>
         </div>
-        <div class="col-12 col-md-4">
-          <div class="bg-white rounded border shadow-sm p-3 h-100">
-            <div class="row border-bottom mb-3"><h5>Ventas por categoría</h5></div>
-            <div class="d-flex justify-content-between mb-1"><span>Antiadherentes</span><span>50%</span></div>
-            <div class="progress mb-3"><div class="progress-bar" role="progressbar" style="width:50%"></div></div>
-            <div class="d-flex justify-content-between mb-1"><span>Acero inoxidable</span><span>50%</span></div>
-            <div class="progress mb-3"><div class="progress-bar" role="progressbar" style="width:50%"></div></div>
-            <div class="d-flex justify-content-between mb-1"><span>Hierro fundido</span><span>25%</span></div>
-            <div class="progress mb-3"><div class="progress-bar" role="progressbar" style="width:25%"></div></div>
-            <div class="d-flex justify-content-between mb-1"><span>Wok</span><span>75%</span></div>
-            <div class="progress mb-3"><div class="progress-bar" role="progressbar" style="width:75%"></div></div>
-          </div>
+        
+        <!--ventas por categoría-->
+        <div class="col-12 col-lg-4">
+            <!--resumen ventas por categoría-->
+            <div class="bg-white rounded border shadow-sm p-3" style="height: 100%;">
+                <div class="row border-bottom mb-3">
+                    <h5>Ventas por categoría</h5>
+                </div>
+                
+                <!-- Fila de antiadherentes -->
+                <div class="d-flex justify-content-between mb-1">
+                    <span>Antiadherentes</span>
+                    <span>50%</span>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                
+                <!-- Fila de acero inoxidable -->
+                <div class="d-flex justify-content-between mb-1">
+                    <span>Acero inoxidable</span>
+                    <span>50%</span>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                
+                <!-- Fila de hierro fundido -->
+                <div class="d-flex justify-content-between mb-1">
+                    <span>Hierro fundido</span>
+                    <span>25%</span>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                
+                <!-- Fila de wok -->
+                <div class="d-flex justify-content-between mb-1">
+                    <span>Wok</span>
+                    <span>75%</span>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>  
         </div>
-      </div>
- 
-      <!-- PEDIDOS RECIENTES Y PRODUCTOS MÁS VENDIDOS -->
-      <div class="row mb-4">
+    </div>
+
+    <!-- PEDIDOS RECIENTES Y PRODUCTOS MÁS VENDIDOS -->
+    <div class="row mb-4">
         <div class="col-12 mb-4 col-md-8">
           <div class="bg-white rounded border shadow-sm">
             <div class="row border-bottom mb-0 align-items-center mx-0 pb-2 px-3 pt-2">
